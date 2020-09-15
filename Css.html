@@ -16,16 +16,6 @@
             font-weight:bold;
             text-decoration:none;
         }
-
-        #uno:checked{
-            left:0px;
-        }
-
-        .cierre{
-            font-weight: bold;
-            color:red;
-        }
-
     </style>
 </head>
 <body>
@@ -2135,13 +2125,380 @@
 </div>
 
 
+<h1 onclick="mostrar('Opacity')">CSS Opacity </h1>
+<div id = "Opacity">
+    <p onclick="cerrar('Opacity')" class = "cierre">cerrar</p>
+    <div>
+        Set the transparency/opacity of the &ltimg&gt element to "0.4".</br>
+        <pre>
+            &ltstyle&gt
+                img{opacity:0.4;}
+            &lt/style&gt
+
+            &lth5&gtCabecera &lt/h5&gt
+            &ltimg src="klematis.jpg" width="150" height="113"&gt
+        </pre>
+        Example:
+        <style>
+            .opa1{
+                opacity:0.4;
+            }
+        </style>
+        <h4>Cabecera </h4>
+        <img class = "opa1" src="1.jpg" width="150" height="113">
+    </div>
+
+    <div>
+        Remove the transparency/opacity of the &ltimg&gt element when the user hovers over it with the mouse pointer.</br>
+        <pre>
+            &ltstyle&gt
+                img:hover {
+                    opacity:1
+                 }
+                img{
+                    opacity: 0.4;
+                }
+            &lt/style&gt
+
+            &lth5&gtCabecera &lt/h5&gt
+            &ltimg src="klematis.jpg" width="150" height="113"&gt
+        </pre>
+        Example:
+        <style>
+            .opa1{
+                opacity:0.4;
+            }
+
+            img.opa2:hover{
+                opacity:1
+            }
+        </style>
+        <h4>Cabecera </h4>
+        <img class = "opa1 opa2" src="1.jpg" width="150" height="113">
+    </div>
+</div>
 
 
-        <h1>CSS Opacity </h1>
-        <h1>CSS Attribute Selector </h1>
-        <h1>CSS Rounded Corners </h1>
-        <h1>CSS Border Images </h1>
-        <h1>CSS Backgrounds </h1>
+<h1 onclick="mostrar('AttributeSelector')">CSS Attribute Selector  </h1>
+<div id = "AttributeSelector">
+    <p onclick="cerrar('AttributeSelector')" class = "cierre">cerrar</p>
+    <div>
+        Set the background-color to "lightblue" for elements with a "target" attribute.</br>
+        <pre>
+            &ltstyle&gt
+                a[target]{background-color:lightblue; }
+            &lt/style&gt
+
+            &lth5&gtCabecera &lt/h5&gt
+            &lta href="https://www.w3schools.com"&gtw3schools.com&lt/a&gt
+            &lta href="http://www.disney.com" target="_blank"&gtdisney.com&lt/a&gt
+            &lta href="http://www.wikipedia.org" target="_top"&gtwikipedia.org&lt/a&gt
+
+        </pre>
+        Example:
+        <style>
+            .AtSel1{background-color:lightblue; }
+        </style>
+        <h4>Cabecera </h4>
+        <a class = "AtSel1" href="https://www.w3schools.com">w3schools.com</a>
+        <a class = "AtSel1" href="http://www.disney.com" target="_blank">disney.com</a>
+        <a class = "AtSel1" href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+
+    </div>
+
+    <div>
+        Set the background-color to "lightblue" for elements with an attribute like: target="_blank".</br>
+        <pre>
+            &ltstyle&gt
+                a[target="_blank"] {
+                    background-color: lightblue;
+                }
+            &lt/style&gt
+
+            &lth5&gtCabecera &lt/h5&gt
+            &lta href="https://www.w3schools.com"&gtw3schools.com&lt/a&gt
+            &lta href="http://www.disney.com" target="_blank"&gtdisney.com&lt/a&gt
+            &lta href="http://www.wikipedia.org" target="_top"&gtwikipedia.org&lt/a&gt
+
+        </pre>
+        Example:
+        <style>
+            .AtSel1{background-color:lightblue; }
+        </style>
+        <h4>Cabecera </h4>
+        <a href="https://www.w3schools.com">w3schools.com</a>
+        <a class = "AtSel1" href="http://www.disney.com" target="_blank">disney.com</a>
+        <a class = "AtSel1" href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+    </div>
+
+    <div>
+        Set a border with the color "red", around elements with a "title" attribute containing the word "red".</br>
+        <pre>
+            &ltstyle&gt
+                [title~="red"] {
+                    border: 5px solid red;
+                }
+            &lt/style&gt
+
+            &lth5&gtCabecera &lt/h5&gt
+            &ltimg src="1.jpg" title="two red flowers" width="107" height="90"&gt
+            &ltimg src="1.jpg" title="purple flower" width="107" height="80"&gt
+            &ltimg src="1.jpg" title="red flower" width="116" height="90"&gt
+            &ltimg src="1.jpg" title="two white flowers" width="120" height="90"&gt
+
+        </pre>
+        Example:
+        <style>
+            .AtSel3{border: 5px solid red;}
+        </style>
+        <h4>Cabecera </h4>
+        <img class = "AtSel3" src="1.jpg" title="two red flowers" width="107" height="90">
+        <img src="1.jpg" title="purple flower" width="107" height="80">
+        <img class = "AtSel3" src="1.jpg" title="red flower" width="116" height="90">
+        <img src="1.jpg" title="two white flowers" width="120" height="90">
+    </div>
+
+    <div>
+        Set a border with the color "red", around elements with a "title" attribute starting with "red".</br>
+        <pre>
+            &ltstyle&gt
+                [title^="red"] {
+                 border: 5px solid red;
+                }
+            &lt/style&gt
+
+            &lth5&gtCabecera &lt/h5&gt
+            &ltimg src="1.jpg" title="two red flowers" width="107" height="90"&gt
+            &ltimg src="1.jpg" title="purple flower" width="107" height="80"&gt
+            &ltimg src="1.jpg" title="red flower" width="116" height="90"&gt
+            &ltimg src="1.jpg" title="two white flowers" width="120" height="90"&gt
+
+        </pre>
+        Example:
+        <style>
+            .AtSel3{border: 5px solid red;}
+        </style>
+        <h4>Cabecera </h4>
+        <img src="1.jpg" title="two red flowers" width="107" height="90">
+        <img src="1.jpg" title="purple flower" width="107" height="80">
+        <img class = "AtSel3" src="1.jpg" title="red flower" width="116" height="90">
+        <img src="1.jpg" title="two white flowers" width="120" height="90">
+    </div>
+
+    <div>
+        Set a border with the color "red", around elements with a "title" attribute ending with the word "flower" (not flowers).</br>
+        <pre>
+            &ltstyle&gt
+                [title$="flower"] {
+                    border: 5px solid red;
+                }
+            &lt/style&gt
+
+            &lth5&gtCabecera &lt/h5&gt
+            &ltimg src="1.jpg" title="two red flowers" width="107" height="90"&gt
+            &ltimg src="1.jpg" title="purple flower" width="107" height="80"&gt
+            &ltimg src="1.jpg" title="red flower" width="116" height="90"&gt
+            &ltimg src="1.jpg" title="two white flowers" width="120" height="90"&gt
+
+        </pre>
+        Example:
+        <style>
+            .AtSel3{border: 5px solid red;}
+        </style>
+        <h4>Cabecera </h4>
+        <img src="1.jpg" title="two red flowers" width="107" height="90">
+        <img class = "AtSel3" src="1.jpg" title="purple flower" width="107" height="80">
+        <img class = "AtSel3" src="1.jpg" title="red flower" width="116" height="90">
+        <img src="1.jpg" title="two white flowers" width="120" height="90">
+    </div>
+
+
+    <div>
+        Set a border with the color "red", around elements with a "title" attribute ending with the word "flower" (not flowers).</br>
+        <pre>
+            [title*="flow"] {
+                border: 5px solid red;
+              }
+            &lt/style&gt
+
+            &lth5&gtCabecera &lt/h5&gt
+            &ltimg src="1.jpg" title="two red flowers" width="107" height="90"&gt
+            &ltimg src="1.jpg" title="purple flower" width="107" height="80"&gt
+            &ltimg src="1.jpg" title="red flower" width="116" height="90"&gt
+            &ltimg src="1.jpg" title="two white flowers" width="120" height="90"&gt
+
+        </pre>
+        Example:
+        <style>
+            .AtSel3{border: 5px solid red;}
+        </style>
+        <h4>Cabecera </h4>
+        <img class = "AtSel3" src="1.jpg" title="two red flowers" width="107" height="90">
+        <img class = "AtSel3" src="1.jpg" title="purple flower" width="107" height="80">
+        <img class = "AtSel3" src="1.jpg" title="red flower" width="116" height="90">
+        <img class = "AtSel3" src="1.jpg" title="two white flowers" width="120" height="90">
+    </div>
+
+</div>
+
+<h1 onclick="mostrar('RoundedCorners')">CSS Rounded Corners  </h1>
+<div id = "RoundedCorners">
+    <p onclick="cerrar('RoundedCorners')" class = "cierre">cerrar</p>
+
+    <div>
+        Give the &ltdiv&gt element rounded corners (use the shorthand property and the value "25px")..</br>
+        <pre>
+            &ltstyle&gt
+                div {
+                    border-radius: 25px;
+                    background: #73AD21;
+                    padding: 20px; 
+                    width: 200px;
+                  }
+            &lt/style&gt
+
+            &lth5&gtCabecera &lt/h5&gt
+            &ltdiv&gtThis is a div element. It has some text.&lt/div&gt
+
+        </pre>
+        Example:
+        <style>
+            .attsel1 {
+                    border-radius: 25px;
+                    background: #73AD21;
+                    padding: 20px;
+                    width: 200px;
+                    }
+        </style>
+        <h4>Cabecera </h4>
+        <div class = "attsel1">This is a div element. It has some text.</div>
+    </div>
+
+    <div>
+        Give the <div> element a rounded corner (25px radius) on the bottom left side.</br>
+        <pre>
+            &ltstyle&gt
+
+                div {
+                    border-bottom-left-radius: 25px;
+                    background: #73AD21;
+                    padding: 20px;
+                    width: 200px;
+                  }
+            &lt/style&gt
+
+            &lth5&gtCabecera &lt/h5&gt
+            &ltdiv&gtThis is a div element. It has some text.&lt/div&gt
+
+        </pre>
+        Example:
+        <style>
+            .attsel2 {
+                     border-bottom-left-radius: 25px;
+                    background: #73AD21;
+                    padding: 20px;
+                    width: 200px;
+                    }
+        </style>
+        <h4>Cabecera </h4>
+        <div class = "attsel2">This is a div element. It has some text.</div>
+    </div>
+
+</div>
+
+
+<h1 onclick="mostrar('BorderImages')">CSS Border Images  </h1>
+<div id = "BorderImages">
+    <p onclick="cerrar('BorderImages')" class = "cierre">cerrar</p>
+
+    <div>
+        Give the &ltdiv&gt element a rounded corner (25px radius) on the bottom left side.</br>
+        <pre>
+            &ltstyle&gt
+                div {
+                    border: 10px solid transparent;
+                    border-image: url(1.jpg) 30 round;
+                }
+            &lt/style&gt
+
+            &lth5&gtCabecera &lt/h5&gt
+            &ltdiv&gtThis is a div element. It has some text.&lt/div&gt
+
+        </pre>
+        Example:
+        <style>
+            .attsel3 {
+                border: 10px solid transparent;
+                border-image: url(1.jpg) 30 round;
+                    }
+        </style>
+        <h4>Cabecera </h4>
+        <div class = "attsel3">This is a div element. It has some text.</div></br>
+    </div>
+
+    <div>
+        Give the &ltdiv&gt element a rounded corner (25px radius) on the bottom left side.</br>
+        <pre>
+            &ltstyle&gt
+            div { 
+                border: 10px solid transparent;
+                border-image: url(border.png) 30 stretch;
+              }
+            &lt/style&gt
+
+            &lth5&gtCabecera &lt/h5&gt
+            &ltdiv&gtThis is a div element. It has some text.&lt/div&gt
+
+        </pre>
+        Example:
+        <style>
+            .attsel4 {
+                border: 10px solid transparent;
+                border-image: url(border.png) 30 stretch;
+                    }
+        </style>
+        <h4>Cabecera </h4>
+        <div class = "attsel4">This is a div element. It has some text.</div>
+    </div>
+</div>
+
+<h1 onclick="mostrar('Backgrounds')">CSS Backgrounds   </h1>
+<div id = "Backgrounds">
+    <p onclick="cerrar('Backgrounds')" class = "cierre">cerrar</p>
+
+    <div>
+        Add a second background image ("2.jpg") to the &ltbody&gt element. Make sure that "1.jpg" is displayed on top of the current background image.</br>
+        <pre>
+            &ltstyle&gt
+                body {
+                    background-image: url(2.jpg), url(1.jpg;
+                }
+            &lt/style&gt
+            &lt/head&gt
+            &ltbody&gt
+
+            &lth5>This is a Heading&lt/h5&gt
+            &ltp>This is a paragraph.&lt/p&gt
+            &ltp>This is another paragraph.&lt/p&gt
+        </pre>
+        Example:
+        <style>
+        .Back1 {
+            background-image: url(2.jpg), url(1.jpg);
+        }
+        </style>
+        </head>
+        <div class = "Back1">
+
+        <h5>This is a Heading</h5>
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+        </div>
+    </div>
+</div>
+
+
+
         <h1>CSS Colors </h1>
         <h1>CSS Colors </h1>
         <h1>CSS Gradients </h1>
