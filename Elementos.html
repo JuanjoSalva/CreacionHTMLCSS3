@@ -15,6 +15,10 @@
         font-weight:bold;
         text-decoration:none;
     }
+    .cierre{
+      color:red;
+      font-weight: bold;
+    }
     </style>
   </head>
   <body>
@@ -22,105 +26,115 @@
       <a href="index.html">Volver</a>
     </div>
 
-        <h1>Attributes</h1>
+    <h1 onclick="mostrar('Attributes')">Attributes</h1>
+    <div id = "Attributes" style = "display: none">
+        <p onclick="cerrar('Attributes')" class = "cierre">cerrar</p>
+
         <div>
-        Add a "tooltip" to the paragraph below with the text "About W3Schools"<br />
-        &ltp <strong>title</strong>="About W3Schools"&gt W3Schools is a web
-        developer's site.&lt/p&gt<br />
-        Example:
-        <p title="About W3Schools">W3Schools is a web developer's site.</p>
-        <br /><br />
+          Add a "tooltip" to the paragraph below with the text "About W3Schools"<br />
+          &ltp <strong>title</strong>="About W3Schools"&gt W3Schools is a web
+          developer's site.&lt/p&gt<br />
+          Example:
+          <p title="About W3Schools">W3Schools is a web developer's site.</p>
+          <br /><br />
         </div>
 
         <div>
-        Set the size of the image to 250 pixels wide and 400 pixels tall.<br />
-        &ltimg src="w3schools.jpg" width="250" height="400"&gt<br />
-        Example:
-        <div>
-            <img src="1.jpg" width="250" height="400" />
-        </div><br /><br />
+          Set the size of the image to 250 pixels wide and 400 pixels tall.<br />
+          &ltimg src="w3schools.jpg" width="250" height="400"&gt<br />
+          Example:
+          <div>
+              <img src="1.jpg" width="250" height="400" />
+          </div><br /><br />
         </div>
 
         <div>
-        Make the element below into a link that goes to
-        "https://www.w3schools.com".<br />
-        &lta href = "https://www.w3schools.com"&gtThis is a link&lt/a&gt<br />
-        Example:
-        <a href="https://www.w3schools.com">This is a link</a><br /><br />
+          Make the element below into a link that goes to
+          "https://www.w3schools.com".<br />
+          &lta href = "https://www.w3schools.com"&gtThis is a link&lt/a&gt<br />
+          Example:
+          <a href="https://www.w3schools.com">This is a link</a><br /><br />
         </div>
 
         <div>
-        Specify an alternate text for the image.<br />
-        Alternate text is useful when the image cannot be displayed, like when the
-        page is read by a screen reader.<br />
-        &ltimg src="w3schools.png" ="w3schools Logo"&gt<br /><br />
-        Example:
-        <div>
-            <img src="1.jpg" alt="w3schools Logo" />
+          Specify an alternate text for the image.<br />
+          Alternate text is useful when the image cannot be displayed, like when the
+          page is read by a screen reader.<br />
+          &ltimg src="w3schools.png" ="w3schools Logo"&gt<br /><br />
+          Example:
+          <div>
+              <img src="1.jpg" alt="w3schools Logo" />
+          </div>
         </div>
-        </div>
-
-   <h1>Headings</h1>
-    <div>
-      Use the correct HTML tag to add a heading with the text "London".<br />
-      &lth1&gtLondon&lt/h1&gtLondon is the capital city of England. It is the
-      most populous city in the United Kingdom, with a metropolitan area of over
-      13 million inhabitants.<br />
-      Example:
-      <h1>London</h1>
-      London is the capital city of England. It is the most populous city in the
-      United Kingdom, with a metropolitan area of over 13 million
-      inhabitants.<br /><br />
     </div>
 
-    <div>
-      Add six headings to the document with the text "Hello". Start with the
-      most important heading (the largest) and end with the least important
-      heading (the smallest).<br />
-      &lth1&gtHello&lt/h1&gt<br />
-      &lth2&gtHello&lt/h2&gt<br />
-      &lth3&gtHello&lt/h3&gt<br />
-      &lth4&gtHello&lt/h4&gt<br />
-      &lth5&gtHello&lt/h5&gt<br />
-      &lth6&gtHello&lt/h6&gt<br />
-      Example:
-      <h1>Hello</h1>
-      <h2>Hello</h2>
-      <h3>Hello</h3>
-      <h4>Hello</h4>
-      <h5>Hello</h5>
-      <h6>Hello</h6>
-      <br /><br />
+    <h1 onclick="mostrar('Headings')">Headings</h1>
+    <div id = "Headings" style = "display: none">
+        <p onclick="cerrar('Headings')" class = "cierre">cerrar</p>
+        <div>
+          Use the correct HTML tag to add a heading with the text "London".<br />
+          &lth1&gtLondon&lt/h1&gtLondon is the capital city of England. It is the
+          most populous city in the United Kingdom, with a metropolitan area of over
+          13 million inhabitants.<br />
+          Example:
+          <h1>London</h1>
+          London is the capital city of England. It is the most populous city in the
+          United Kingdom, with a metropolitan area of over 13 million
+          inhabitants.<br /><br />
+        </div>
+
+        <div>
+          Add six headings to the document with the text "Hello". Start with the
+          most important heading (the largest) and end with the least important
+          heading (the smallest).<br />
+          &lth1&gtHello&lt/h1&gt<br />
+          &lth2&gtHello&lt/h2&gt<br />
+          &lth3&gtHello&lt/h3&gt<br />
+          &lth4&gtHello&lt/h4&gt<br />
+          &lth5&gtHello&lt/h5&gt<br />
+          &lth6&gtHello&lt/h6&gt<br />
+          Example:
+          <h1>Hello</h1>
+          <h2>Hello</h2>
+          <h3>Hello</h3>
+          <h4>Hello</h4>
+          <h5>Hello</h5>
+          <h6>Hello</h6>
+          <br /><br />
+        </div>
+
+        <div>
+          Mark up the text with appropriate tags:<br />
+          "Universal Studios Presents" is the most important heading.<br />
+          "Jurassic Park" is the next most important heading.<br />
+          "About" is the third most important heading.<br />
+          The last sentence is just a paragraph.<br />
+          Start with the most important heading (the largest) and end with the least
+          important heading (the smallest).<br />
+
+          &lth1&gtUniversal Studios Presents&lt/h1&gt is the most important
+          heading.<br />
+          &lth2&gtJurassic Park&lt/h2&gt is the next most important heading.<br />
+          &lth3&gtAbout&lth3&gt is the third most important heading.<br />
+          &ltp&gtOn the Island of Isla Nublar, a new park has been built: Jurassic
+          Park is a theme park of cloned dinosaurs!!<br /><br />
+
+          Example:
+          <h1>Universal Studios Presents</h1> is the most important heading.<br />
+          <h2>Jurassic Park</h2> is the next most important heading.<br />
+          <h3>About</h3> is the third most important heading.<br />
+          <p>
+            On the Island of Isla Nublar, a new park has been built: Jurassic Park
+            is a theme park of cloned dinosaurs!!
+          </p>
+          <br /><br />
+        </div>
     </div>
 
-    <div>
-      Mark up the text with appropriate tags:<br />
-      "Universal Studios Presents" is the most important heading.<br />
-      "Jurassic Park" is the next most important heading.<br />
-      "About" is the third most important heading.<br />
-      The last sentence is just a paragraph.<br />
-      Start with the most important heading (the largest) and end with the least
-      important heading (the smallest).<br />
+    <h1 onclick="mostrar('Paragraphs')">Paragraphs</h1>
+    <div id = "Paragraphs" style = "display: none">
+        <p onclick="cerrar('Paragraphs')" class = "cierre">cerrar</p>
 
-      &lth1&gtUniversal Studios Presents&lt/h1&gt is the most important
-      heading.<br />
-      &lth2&gtJurassic Park&lt/h2&gt is the next most important heading.<br />
-      &lth3&gtAbout&lth3&gt is the third most important heading.<br />
-      &ltp&gtOn the Island of Isla Nublar, a new park has been built: Jurassic
-      Park is a theme park of cloned dinosaurs!!<br /><br />
-
-      Example:
-      <h1>Universal Studios Presents</h1> is the most important heading.<br />
-      <h2>Jurassic Park</h2> is the next most important heading.<br />
-      <h3>About</h3> is the third most important heading.<br />
-      <p>
-        On the Island of Isla Nublar, a new park has been built: Jurassic Park
-        is a theme park of cloned dinosaurs!!
-      </p>
-      <br /><br />
-    </div>
-
-    <h1>Paragraphs</h1>
         <div>
             Use the correct HTML tag to add a paragraph with the text "Hello
             World!".<br />
@@ -183,97 +197,108 @@
             Oh, bring back my Bonnie to me.
             </pre></br></br>
         </div>
-
-   <h1>Styles</h1>
-    <div>
-      Use the correct HTML attribute, and CSS, to set the color of the paragraph to "blue".<br />
-      &ltp&gt style = "color:blue">This is a paragraph.&lt/p&gt<br />
-      Example:
-      <p style = "color:blue">This is a paragraph.</p><br /><br />
     </div>
 
-    <div>
-      Use CSS to set the font of the paragraph to "courier".<br />
-      &ltp style="font-style:courier;"&gtThis is a paragraph.&lt/p&gt</br>
-      Example:
-      <p style="font-family:courier;">This is a paragraph.</p></div</br></br>
-    </div>
+    <h1 onclick="mostrar('Styles')">Styles</h1>
+    <div id = "Styles" style = "display: none">
+        <p onclick="cerrar('Styles')" class = "cierre">cerrar</p>
 
-    <div>
-      Use CSS to center align the paragraph.</br>
-      &ltp style="text-align:center;"&gtThis is a paragraph.&lt/p&gt</br>
-      Example:
-      <p style="text-align:center;">This is a paragraph.</p></br></br>
-    </div>
+      <div>
+        Use the correct HTML attribute, and CSS, to set the color of the paragraph to "blue".<br />
+        &ltp&gt style = "color:blue">This is a paragraph.&lt/p&gt<br />
+        Example:
+        <p style = "color:blue">This is a paragraph.</p><br /><br />
+      </div>
 
-    <div>
-      Use CSS to set the text size to 50 pixels.</br>
-      &ltp style="font-size:50px;"&gtThis is a paragraph.&lt/p&gt</br>
-      Example:
-      <p style="font-size:50px;">This is a paragraph.</p></br>
-    </div>
+      <div>
+        Use CSS to set the font of the paragraph to "courier".<br />
+        &ltp style="font-style:courier;"&gtThis is a paragraph.&lt/p&gt</br>
+        Example:
+        <p style="font-family:courier;">This is a paragraph.</p></br></br>
+      </div>
 
-    <div>
-      Use CSS to set the background-color of the document to yellow.</br>
-      &ltbody style="background-color:yellow;"&gt</br>
-      Example:
-      <div style="background-color:yellow;">
-          <p>Esto sería la cabecera</p>
-          <p>esto es el cuerpo</p>
+      <div>
+        Use CSS to center align the paragraph.</br>
+        &ltp style="text-align:center;"&gtThis is a paragraph.&lt/p&gt</br>
+        Example:
+        <p style="text-align:center;">This is a paragraph.</p></br></br>
+      </div>
+
+      <div>
+        Use CSS to set the text size to 50 pixels.</br>
+        &ltp style="font-size:50px;"&gtThis is a paragraph.&lt/p&gt</br>
+        Example:
+        <p style="font-size:50px;">This is a paragraph.</p></br>
+      </div>
+
+      <div>
+        Use CSS to set the background-color of the document to yellow.</br>
+        &ltbody style="background-color:yellow;"&gt</br>
+        Example:
+        <div style="background-color:yellow;">
+            <p>Esto sería la cabecera</p>
+            <p>esto es el cuerpo</p>
+        </div>
+      </div>
+
+      <div>
+        Use CSS to center align the document.</br>
+        &ltbody style="text-align:center;"&gt
+        &lth5&gtThis is a heading&lt/h5&gt
+        &ltp&gtThis is a paragraph.&lt/p&gt</br>
+        <h5 style="text-align:center;">This is a heading</h5>
+        <p style="text-align:center;">This is a paragraph.</p></br></br>
       </div>
     </div>
 
-    <div>
-      Use CSS to center align the document.</br>
-      &ltbody style="text-align:center;"&gt
-      &lth5&gtThis is a heading&lt/h5&gt
-      &ltp&gtThis is a paragraph.&lt/p&gt</br>
-      <h5 style="text-align:center;">This is a heading</h5>
-      <p style="text-align:center;">This is a paragraph.</p></br></br>
+
+    <h1 onclick="mostrar('Formatting')">Formatting</h1>
+    <div id = "Formatting" style = "display: none">
+        <p onclick="cerrar('Formatting')" class = "cierre">cerrar</p>
+        <div>
+            Add extra importance to the word "degradation" in the paragraph below.</br>
+            &ltp&gt
+            WWF's mission is to stop the &ltstrong&gtdegradation&lt/strong&gt of our planet's natural environment.</br>
+            &lt/p&gt</br>
+            Exaple:
+            <p>
+              WWF's mission is to stop the <strong>degradation</strong> of our planet's natural environment.</br>
+            </p></br></br>
+        </div>
+
+        <div>
+          Emphasize the word "metropolitan" in the text below.</br>
+          &ltp&gtTokyo is the capital of Japan, the most populous &ltem&gtmetropolitan&lt/em&gt area in the world.&lt/p&gt</br>
+            Example:
+            <p>Tokyo is the capital of Japan, the most populous <em>metropolitan</em> area in the world.</p></br></br>
+        </div>
+
+        <div>
+          Highlight the word "FUN" in the text below.</br>
+          &ltp&gtHTML is &ltmark&gtFUN&lt/mark&gt to learn! &lt/p&gt</br>
+          Example:
+          <p>HTML is <mark>FUN</mark> to learn! </p></br></br>
+        </div>
+
+        <div>
+          Apply subscript formatting to the number "2" in the text below.</br>
+          &ltp&gtH &ltsub&gt2&lt/sub&gt O is the scientific term for water. &lt/p&gt</br>
+            Example:
+            <p>H <sub>2</sub> O is the scientific term for water. </p></br></br>
+        </div>
+
+        <div>
+          Add a line through (strikeout) the letters "blue" in the text below.</br>
+          &ltp&gtMy favorite color is &ltdel&gtblue&lt/del&gt  red. &lt/p&gt</br>
+          Example:
+          <p>My favorite color is <del>blue</del>  red. </p></br></br>
+        </div>
     </div>
 
-    <a href="index.html">Volver</a>
-     <h1>Formatting</h1>
-    <div>
-        Add extra importance to the word "degradation" in the paragraph below.</br>
-        &ltp&gt
-        WWF's mission is to stop the &ltstrong&gtdegradation&lt/strong&gt of our planet's natural environment.</br>
-        &lt/p&gt</br>
-        Exaple:
-        <p>
-          WWF's mission is to stop the <strong>degradation</strong> of our planet's natural environment.</br>
-        </p></br></br>
-    </div>
+    <h1 onclick="mostrar('Quotations')">Quotations</h1>
+    <div id = "Quotations" style = "display: none">
+        <p onclick="cerrar('Quotations')" class = "cierre">cerrar</p>
 
-    <div>
-      Emphasize the word "metropolitan" in the text below.</br>
-      &ltp&gtTokyo is the capital of Japan, the most populous &ltem&gtmetropolitan&lt/em&gt area in the world.&lt/p&gt</br>
-        Example:
-        <p>Tokyo is the capital of Japan, the most populous <em>metropolitan</em> area in the world.</p></br></br>
-    </div>
-
-    <div>
-      Highlight the word "FUN" in the text below.</br>
-      &ltp&gtHTML is &ltmark&gtFUN&lt/mark&gt to learn! &lt/p&gt</br>
-      Example:
-      <p>HTML is <mark>FUN</mark> to learn! </p></br></br>
-    </div>
-
-    <div>
-      Apply subscript formatting to the number "2" in the text below.</br>
-      &ltp&gtH &ltsub&gt2&lt/sub&gt O is the scientific term for water. &lt/p&gt</br>
-        Example:
-        <p>H <sub>2</sub> O is the scientific term for water. </p></br></br>
-    </div>
-
-    <div>
-      Add a line through (strikeout) the letters "blue" in the text below.</br>
-      &ltp&gtMy favorite color is &ltdel&gtblue&lt/del&gt  red. &lt/p&gt</br>
-      Example:
-      <p>My favorite color is <del>blue</del>  red. </p></br></br>
-    </div>
-
-    <h1>Quotations</h1>
       <div>
         Use an HTML element to add quotation marks around the letters "cool".</br>
         &ltp&gtI am so &ltq&gtcool&lt/q&gt.&lt/p&gt</br>
@@ -311,8 +336,12 @@
         Example:
         <p>The <abbr title="World Health Organization"> WHO</abbr> was founded in 1948.</p></br></br>
       </div>
+    </div>
 
-    <h1>Comments</h1>
+    <h1 onclick="mostrar('Comments')">StCommentsyles</h1>
+    <div id = "Comments" style = "display: none">
+        <p onclick="cerrar('Comments')" class = "cierre">cerrar</p>
+
       <div>
         Use the HTML comment tag to make a comment out of the "This is a comment" text.</br>
         &lth1&gtThis is a heading&lt/h1&gt</br>
@@ -330,8 +359,12 @@
         Example:
         <!--<p>This is a paragraph.</p>--></br></br>
       </div>
+    </div>
 
-    <h1>CSS</h1>
+    <h1 onclick="mostrar('CSS')">CSS</h1>
+    <div id = "CSS" style = "display: none">
+        <p onclick="cerrar('CSS')" class = "cierre">cerrar</p>
+
       <div>
         Use CSS to set the background color of the document (body) to yellow.</br>
         &ltstyle&gt body{background-color:yellow;}&lt/style&gt</br>
@@ -375,8 +408,11 @@
         <style> #p1{border: 1px solid green;}</style>
         <p id="p1">Esto es un parrafo</p></br>
       </div>
+    </div>
 
-    <h1>Links</h1>
+    <h1 onclick="mostrar('Links')">CSLinksS</h1>
+    <div id = "Links" style = "display: none">
+        <p onclick="cerrar('Links')" class = "cierre">cerrar</p>
       <div>
         Use the correct HTML to make the text below into a link to "default.html".</br>
         &lta href="default.html"&gtVisit our HTML tutorial.&lt/a&gt</br>
@@ -413,8 +449,12 @@
         Example:
         <a href="default.html" title="Home">Back to Home</a></br></br>
       </div>
+    </div>
 
-   <h1>Images</h1>
+    <h1 onclick="mostrar('Images')">Images</h1>
+    <div id = "Images" style = "display: none">
+        <p onclick="cerrar('Images')" class = "cierre">cerrar</p>
+
       <div>
         Use the HTML image attributes to set the size of the image to 250 pixels wide and 400 pixels tall.</br>
         &ltimg src="scream.png" width="250" height="400"&gt</br>
@@ -468,8 +508,12 @@
           <img src="3.jpg" alt="imágen no encontrada"></br></br>
         </div>
       </div>
+    </div>
 
-   <h1>Tables</h1>
+    <h1 onclick="mostrar('Tables')">Tables</h1>
+    <div id = "Tables" style = "display: none">
+      <p onclick="cerrar('Tables')" class = "cierre">cerrar</p>
+
       <div>
         Add a table row with two table headers.</br>
         The two table headers should have the value "Name" and "Age".</br>
@@ -592,79 +636,84 @@
             <td>94</td>
           </tr>
         </table></br></br>
-    </div>
+      </div>
 
-    <div>
-      Use the correct HTML attribute to make the first TH element span two columns.</br>
-      <pre>
-       &lttable&gt
-          &lttr&gt
-            &ltth colspan = "2"&gtName&lt/th&gt
-            &ltth&gtAge&lt/th&gt
-          &lt/tr&gt
-          &lttr&gt
-            &lttd&gtJill &gt
-            &lttd&gtSmith &gt
-            &lttd&gt50&lt/td&gt
-          &lt/tr&gt
-          &lttr&gt
-            &lttd&gtEve&gt
-            &lttd&gtJackson&gt
-            &lttd&gt94&lt/td&gt
-          &lt/tr&gt
-        &lt/table&gt</pre>
-      Example:
-      <table style="width:300px">
-        <caption>Names</caption>
-        <tr>
-          <th colspan="2">Name</th>
-          <th>Age</th>
-        </tr>
-        <tr>
-          <td>Jill </td>
-          <td>Smith</td>
-          <td>50</td>
-        </tr>
-        <tr>
-          <td>Eve </td>
-          <td>Jackson </td>
-          <td>94</td>
-        </tr>
-      </table></br></br>
-    </div>
-
-
-    <div>
-      Use the correct HTML attribute to make the second TH element span two rows.</br>
-      <pre>
-      &lttable&gt
-        &lttr&gt
-          &ltth &gtName&lt/th&gt
-          &lttd&gtJill Smith &gt
-        &lt/tr&gt
-        &lttr&gt
-          &ltth rowspan="2"&gtAge&lt/th&gt
-          &lttd&gt50&lt/td&gt
-          &lttd&gt45&lt/td&gt
-        &lt/tr&gt
-      &lt/table&gt
-      </pre>
-      Example:
-      <table style="width:300px">
-        <caption>Names</caption>
-        <tr>
-          <th>Name</th>
-          <td>Jill Smith</td>
-        </tr>
-
-        <tr>
-          <th rowspan="2">Age</th>
-          <td>45</td>
-          <td>75</td>
-        </tr>
+      <div>
+        Use the correct HTML attribute to make the first TH element span two columns.</br>
+        <pre>
+        &lttable&gt
+            &lttr&gt
+              &ltth colspan = "2"&gtName&lt/th&gt
+              &ltth&gtAge&lt/th&gt
+            &lt/tr&gt
+            &lttr&gt
+              &lttd&gtJill &gt
+              &lttd&gtSmith &gt
+              &lttd&gt50&lt/td&gt
+            &lt/tr&gt
+            &lttr&gt
+              &lttd&gtEve&gt
+              &lttd&gtJackson&gt
+              &lttd&gt94&lt/td&gt
+            &lt/tr&gt
+          &lt/table&gt</pre>
+        Example:
+        <table style="width:300px">
+          <caption>Names</caption>
+          <tr>
+            <th colspan="2">Name</th>
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>Jill </td>
+            <td>Smith</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Eve </td>
+            <td>Jackson </td>
+            <td>94</td>
+          </tr>
         </table></br></br>
+      </div>
 
-    <h1>Lists</h1>
+
+      <div>
+        Use the correct HTML attribute to make the second TH element span two rows.</br>
+        <pre>
+        &lttable&gt
+          &lttr&gt
+            &ltth &gtName&lt/th&gt
+            &lttd&gtJill Smith &gt
+          &lt/tr&gt
+          &lttr&gt
+            &ltth rowspan="2"&gtAge&lt/th&gt
+            &lttd&gt50&lt/td&gt
+            &lttd&gt45&lt/td&gt
+          &lt/tr&gt
+        &lt/table&gt
+        </pre>
+        Example:
+        <table style="width:300px">
+          <caption>Names</caption>
+          <tr>
+            <th>Name</th>
+            <td>Jill Smith</td>
+          </tr>
+
+          <tr>
+            <th rowspan="2">Age</th>
+            <td>45</td>
+            <td>75</td>
+          </tr>
+          </table></br></br>
+      </div>
+    </div>
+
+    <h1 onclick="mostrar('Lists')">Lists</h1>
+    <div id = "Lists" style = "display: none">
+      <p onclick="cerrar('Lists')" class = "cierre">cerrar</p>
+
       <div>
         Add a list item with the text "Coffee" inside the &ltul&gt.</br>
         <pre>
@@ -764,8 +813,12 @@
           <dd>- white cold drink</dd>
         </dl><br><br>
       </div>
+    </div>
 
-    <h1>Classes</h1>
+    <h1 onclick="mostrar('Classes')">Classes</h1>
+    <div id = "Classes" style = "display: none">
+      <p onclick="cerrar('Classes')" class = "cierre">cerrar</p>
+
       <div>
         Add a color property with the value "blue" inside the "special" class.</br>
         <pre>
@@ -818,8 +871,13 @@
         </style>
         <h5 class="intro special"> Un h5 con 2 clases: color rojo y fondo rosa</h5></br></br>
       </div>
+    </div>
 
-   <h1>Id</h1>
+
+    <h1 onclick="mostrar('Id')">Id</h1>
+    <div id = "Id" style = "display: none">
+      <p onclick="cerrar('Id')" class = "cierre">cerrar</p>
+
       <div>
         Add the correct HTML attribute to make the H1 element red.</br>
         <pre>
@@ -855,8 +913,12 @@
         </style>
         <p id="special">Un parrafo con estilo por id, color azul</p></br></br>
       </div>
+    </div>
 
-    <h1>Iframes</h1>
+    <h1 onclick="mostrar('Iframes')">Iframes</h1>
+    <div id = "Iframes" style = "display: none">
+      <p onclick="cerrar('Iframes')" class = "cierre">cerrar</p>
+
       <div>
         Create an iframe with a URL address that goes to https://www.w3schools.com.</br>
         &ltiframe src="https://www.w3schools.com"&gt&lt/iframe&gt</br>
@@ -892,8 +954,12 @@
           <iframe src="default.html"></iframe></br></br>
         </div>
       </div>
+    </div>
 
-   <h1>Script</h1>
+    <h1 onclick="mostrar('Script')">Script</h1>
+    <div id = "Script" style = "display: none">
+      <p onclick="cerrar('Script')" class = "cierre">cerrar</p>
+
       <div>
           Use JavaScript to change the HTML content of the &ltp&gt element to "Hello World!".</br>
           <pre>
@@ -955,8 +1021,12 @@
           document.getElementById("demo3").src = "1.jpg";
         </script></br></br>
       </div>
+    </div>
 
-    <h1>Computercode</h1>
+    <h1 onclick="mostrar('Computercode')">Computercode</h1>
+    <div id = "Computercode" style = "display: none">
+      <p onclick="cerrar('ScrComputercodeipt')" class = "cierre">cerrar</p>
+
       <div>
         Define the text "var person;" as programming code.</br>
         <pre>
@@ -1025,8 +1095,13 @@
         <input type="radio" name="gender" value="female"> Female
         </form></br></br>
       </div>
+    </div>
 
-    <h1>Form Attributes</h1>
+
+    <h1 onclick="mostrar('FormAttributes')">Form Attributes</h1>
+    <div id = "FormAttributes" style = "display: none">
+      <p onclick="cerrar('FormAttributes')" class = "cierre">cerrar</p>
+
       <div>
         Add a submit button, and specify that the form should go to "/action_page.php".</br>
         <pre>
@@ -1052,7 +1127,12 @@
         <input type="submit">
         </form></br></br>
       </div>
+    </div>
 
+
+    <h1 onclick="mostrar('FormElements')">Form Elements</h1>
+    <div id = "FormElements" style = "display: none">
+      <p onclick="cerrar('FormElements')" class = "cierre">cerrar</p>
      <h1>Form Elements</h1>
       <div>
         In the form below, add an empty drop down list with the name "cars".</br>
@@ -1100,8 +1180,12 @@
         <textarea name="note"></textarea>
         </form></br></br>
       </div>
+    </div>
 
-    <h1>Input Types</h1>
+    <h1 onclick="mostrar('InputTypes')">Input Types</h1>
+    <div id = "InputTypes" style = "display: none">
+      <p onclick="cerrar('InputTypes')" class = "cierre">cerrar</p>
+
       <div>
         In the form below, add an input field for text, with the name "username" .</br>
         <pre>
@@ -1175,9 +1259,14 @@
         <input type="number" min="1" max="5">
         </form></br>
       </div>
+    </div>
 
-    <h1>Input Attributes</h1>
-      <div>
+
+
+    <h1 onclick="mostrar('InputAttributes')">Input Attributes</h1>
+    <div id = "InputAttributes" style = "display: none">
+      <p onclick="cerrar('InputAttributes')" class = "cierre">cerrar</p>
+     <div>
         In the input field below, add placeholder that says "Your name here".</br>
         <ptre>
         &ltform action="/action_page.php"&gt
@@ -1226,5 +1315,19 @@
         <input type="text" readonly>
         </form></br></br>
       </div>
+    </div>
   </body>
+
+  <script languague="javascript">
+    function mostrar(id) {
+        div = document.getElementById(id);
+        div.style.display = '';
+    }
+
+    function cerrar(id) {
+        div = document.getElementById(id);
+        div.style.display = 'none';
+    }
+
+</script>
 </html>
