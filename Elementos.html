@@ -19,12 +19,17 @@
       color:red;
       font-weight: bold;
     }
-
+    .cierre:hover{
+      cursor:pointer; cursor: hand
+    }
     .Titulo:hover{
             background-color:saddlebrown;
-            cursor:hand ;
+            cursor:hand;
+            cursor:pointer; cursor: hand
         }
-
+    .actividad{
+            border:2px solid black;
+        }
     body{
             background-color: rgb(198, 204, 219);
         }
@@ -39,7 +44,7 @@
     <div id = "Attributes" style = "display: none">
         <p onclick="cerrar('Attributes')" class = "cierre">cerrar</p>
 
-        <div>
+        <div class = "actividad">
           Add a "tooltip" to the paragraph below with the text "About W3Schools"<br />
           &ltp <strong>title</strong>="About W3Schools"&gt W3Schools is a web
           developer's site.&lt/p&gt<br />
@@ -48,7 +53,7 @@
           <br /><br />
         </div>
 
-        <div>
+        <div class = "actividad">
           Set the size of the image to 250 pixels wide and 400 pixels tall.<br />
           &ltimg src="w3schools.jpg" width="250" height="400"&gt<br />
           Example:
@@ -57,7 +62,7 @@
           </div><br /><br />
         </div>
 
-        <div>
+        <div class = "actividad">
           Make the element below into a link that goes to
           "https://www.w3schools.com".<br />
           &lta href = "https://www.w3schools.com"&gtThis is a link&lt/a&gt<br />
@@ -65,7 +70,7 @@
           <a href="https://www.w3schools.com">This is a link</a><br /><br />
         </div>
 
-        <div>
+        <div class = "actividad">
           Specify an alternate text for the image.<br />
           Alternate text is useful when the image cannot be displayed, like when the
           page is read by a screen reader.<br />
@@ -80,7 +85,7 @@
     <h1 onclick="mostrar('Headings')" class = "Titulo">Headings</h1>
     <div id = "Headings" style = "display: none">
         <p onclick="cerrar('Headings')" class = "cierre">cerrar</p>
-        <div>
+        <div class = "actividad">
           Use the correct HTML tag to add a heading with the text "London".<br />
           &lth1&gtLondon&lt/h1&gtLondon is the capital city of England. It is the
           most populous city in the United Kingdom, with a metropolitan area of over
@@ -92,7 +97,7 @@
           inhabitants.<br /><br />
         </div>
 
-        <div>
+        <div class = "actividad">
           Add six headings to the document with the text "Hello". Start with the
           most important heading (the largest) and end with the least important
           heading (the smallest).<br />
@@ -112,7 +117,7 @@
           <br /><br />
         </div>
 
-        <div>
+        <div class = "actividad">
           Mark up the text with appropriate tags:<br />
           "Universal Studios Presents" is the most important heading.<br />
           "Jurassic Park" is the next most important heading.<br />
@@ -144,7 +149,7 @@
     <div id = "Paragraphs" style = "display: none">
         <p onclick="cerrar('Paragraphs')" class = "cierre">cerrar</p>
 
-        <div>
+        <div class = "actividad">
             Use the correct HTML tag to add a paragraph with the text "Hello
             World!".<br />
             &ltp&gtHello World!&lt/p&gt<br />
@@ -153,7 +158,7 @@
             <br /><br />
         </div>
 
-        <div>
+        <div class = "actividad">
             Clean up this document with proper end tags.<br />
             &lth1&gtThis is a Heading&lt/h1&gt<br />
             &ltp&gtThis is a paragraph.&lt/p&gt<br />
@@ -164,15 +169,17 @@
             <br /><br />
             </div>
 
-        <div>
+        <div class = "actividad">
             Add a horizontal rule between the heading and the paragraph.<br />
             &lthr&gt<br />
             Example:
-            <hr />
+            <h1>This is a Heading</h1>
+            <br />
+            <p>This is a paragraph.</p>
             <br /><br />
         </div>
 
-        <div>
+        <div class = "actividad">
             Add a line break in the middle of the paragraph:<br />
             &ltp&gtMy Bonnie lies &ltbr&gt over the ocean.&lt/p&gt<br />
             Example:
@@ -184,7 +191,7 @@
             <br /><br />
         </div>
 
-        <div>
+        <div class = "actividad">
             Wrap this poem around HTML tags that will preserve all spaces and
             linebreaks when the element is displayed.<br />
 
@@ -212,35 +219,35 @@
     <div id = "Styles" style = "display: none">
         <p onclick="cerrar('Styles')" class = "cierre">cerrar</p>
 
-      <div>
+      <div class = "actividad">
         Use the correct HTML attribute, and CSS, to set the color of the paragraph to "blue".<br />
         &ltp&gt style = "color:blue">This is a paragraph.&lt/p&gt<br />
         Example:
         <p style = "color:blue">This is a paragraph.</p><br /><br />
       </div>
 
-      <div>
+      <div class = "actividad">
         Use CSS to set the font of the paragraph to "courier".<br />
         &ltp style="font-style:courier;"&gtThis is a paragraph.&lt/p&gt</br>
         Example:
         <p style="font-family:courier;">This is a paragraph.</p></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Use CSS to center align the paragraph.</br>
         &ltp style="text-align:center;"&gtThis is a paragraph.&lt/p&gt</br>
         Example:
         <p style="text-align:center;">This is a paragraph.</p></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Use CSS to set the text size to 50 pixels.</br>
         &ltp style="font-size:50px;"&gtThis is a paragraph.&lt/p&gt</br>
         Example:
         <p style="font-size:50px;">This is a paragraph.</p></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Use CSS to set the background-color of the document to yellow.</br>
         &ltbody style="background-color:yellow;"&gt</br>
         Example:
@@ -250,7 +257,7 @@
         </div>
       </div>
 
-      <div>
+      <div class = "actividad">
         Use CSS to center align the document.</br>
         &ltbody style="text-align:center;"&gt
         &lth5&gtThis is a heading&lt/h5&gt
@@ -264,7 +271,7 @@
     <h1 onclick="mostrar('Formatting')" class = "Titulo">Formatting</h1>
     <div id = "Formatting" style = "display: none">
         <p onclick="cerrar('Formatting')" class = "cierre">cerrar</p>
-        <div>
+        <div class = "actividad">
             Add extra importance to the word "degradation" in the paragraph below.</br>
             &ltp&gt
             WWF's mission is to stop the &ltstrong&gtdegradation&lt/strong&gt of our planet's natural environment.</br>
@@ -275,28 +282,28 @@
             </p></br></br>
         </div>
 
-        <div>
+        <div class = "actividad">
           Emphasize the word "metropolitan" in the text below.</br>
           &ltp&gtTokyo is the capital of Japan, the most populous &ltem&gtmetropolitan&lt/em&gt area in the world.&lt/p&gt</br>
             Example:
             <p>Tokyo is the capital of Japan, the most populous <em>metropolitan</em> area in the world.</p></br></br>
         </div>
 
-        <div>
+        <div class = "actividad">
           Highlight the word "FUN" in the text below.</br>
           &ltp&gtHTML is &ltmark&gtFUN&lt/mark&gt to learn! &lt/p&gt</br>
           Example:
           <p>HTML is <mark>FUN</mark> to learn! </p></br></br>
         </div>
 
-        <div>
+        <div class = "actividad">
           Apply subscript formatting to the number "2" in the text below.</br>
           &ltp&gtH &ltsub&gt2&lt/sub&gt O is the scientific term for water. &lt/p&gt</br>
             Example:
             <p>H <sub>2</sub> O is the scientific term for water. </p></br></br>
         </div>
 
-        <div>
+        <div class = "actividad">
           Add a line through (strikeout) the letters "blue" in the text below.</br>
           &ltp&gtMy favorite color is &ltdel&gtblue&lt/del&gt  red. &lt/p&gt</br>
           Example:
@@ -308,14 +315,14 @@
     <div id = "Quotations" style = "display: none">
         <p onclick="cerrar('Quotations')" class = "cierre">cerrar</p>
 
-      <div>
+      <div class = "actividad">
         Use an HTML element to add quotation marks around the letters "cool".</br>
         &ltp&gtI am so &ltq&gtcool&lt/q&gt.&lt/p&gt</br>
         Example:
         <p>I am so <q>cool</q>.</p></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         The text below should be a quoted section.</br>
         Add the proper HTML element to it, and specify that it is quoted from the following URL:</br>
         http://www.worldwildlife.org/who/index.html</br>
@@ -331,14 +338,14 @@
         </blockquote></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Make the text below go right-to-left.</br>
         &ltbdo dir="rtl"&gt What a beautiful day! &lt/bdo&gt</br>
         Example:
         <bdo dir="rtl"> What a beautiful day! </bdo></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         The letters "WHO" in the text below is an abbreviation of "World Health Organization".</br>
         Use an HTML element to provide the specified abbreviation of "WHO".</br>
         &ltp&gtThe &ltabbr title="World Health Organization"&gt WHO&lt/abbr&gt was founded in 1948.&lt/p&gt</br>
@@ -347,11 +354,11 @@
       </div>
     </div>
 
-    <h1 onclick="mostrar('Comments')" class = "Titulo">StCommentsyles</h1>
-    <div id = "Comments" style = "display: none">
-        <p onclick="cerrar('Comments')" class = "cierre">cerrar</p>
+  <h1 onclick="mostrar('Comments')" class = "Titulo">StCommentsyles</h1>
+  <div id = "Comments" style = "display: none">
+      <p onclick="cerrar('Comments')" class = "cierre">cerrar</p>
 
-      <div>
+      <div class = "actividad">
         Use the HTML comment tag to make a comment out of the "This is a comment" text.</br>
         &lth1&gtThis is a heading&lt/h1&gt</br>
         &lt!--This is a comment --&gt</br>
@@ -362,7 +369,7 @@
         <p>This is a paragraph.</p></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Add comment tags around the paragraph:</br>
         &lt!--&ltp&gtThis is a paragraph.&lt/p&gt--&gt</br>
         Example:
@@ -374,7 +381,7 @@
     <div id = "CSS" style = "display: none">
         <p onclick="cerrar('CSS')" class = "cierre">cerrar</p>
 
-      <div>
+      <div class = "actividad">
         Use CSS to set the background color of the document (body) to yellow.</br>
         &ltstyle&gt body{background-color:yellow;}&lt/style&gt</br>
         Example:
@@ -388,7 +395,7 @@
         <br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Use CSS to set the font of the document to "courier".</br>
         &ltstyle&gt  body {font-family:courier;} &lt/style&gt</br>
         Example:
@@ -399,7 +406,7 @@
         </div></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Use CSS to set the text color of the document to red.</br>
         &ltstyle&gt body {color:red;}&lt/style&gt</br>
         Example:
@@ -410,7 +417,7 @@
         </div></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Use CSS to make a yellow, 1 pixel thick, border around all paragraphs.</br>
         &ltstyle&gt p{border: 1px solid yellow;}&lt/style&gt</br>
         Example:
@@ -422,28 +429,28 @@
     <h1 onclick="mostrar('Links')" class = "Titulo">CSLinksS</h1>
     <div id = "Links" style = "display: none">
         <p onclick="cerrar('Links')" class = "cierre">cerrar</p>
-      <div>
+      <div class = "actividad">
         Use the correct HTML to make the text below into a link to "default.html".</br>
         &lta href="default.html"&gtVisit our HTML tutorial.&lt/a&gt</br>
         Example:
         <a href="default.html">Visit our HTML tutorial.</a></br></br>
       </div>
 
-      <dv>
+      <dv class = "actividad">
         Use CSS to remove the underline from the link.</br>
         &lta href="html_images.asp" style="text-decoration:none"&ltHTML Images&lt/a&gt</br>
         Example:
         <a href="html_images.asp" style="text-decoration:none">HTML Images</a></br></br>
       </dv>
 
-      <div>
+      <div class = "actividad">
         Use the correct HTML attribute to make the link open in a new window.</br>
         &lta href="html_images.asp" target="_blank"&gt HTML Images&lt/a&gt</br>
         Example:
         <a href="html_images.asp" target="_blank"> HTML Images</a></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Use the correct HTML to make the image become a link to "default.html".</br>
         &lta href="default.html"&gt &ltimg src="smiley.gif"&gt &lt/a&gt</br>
         Example:
@@ -452,7 +459,7 @@
         </div>
       </div>
 
-      <div>
+      <div class = "actividad">
         Add a "tooltip" to the link. The "tooltip" should say "Home".</br>
         &lta href="default.html" title="Home"&gtBack to Home&lt/a&gt</br>
         Example:
@@ -464,7 +471,7 @@
     <div id = "Images" style = "display: none">
         <p onclick="cerrar('Images')" class = "cierre">cerrar</p>
 
-      <div>
+      <div class = "actividad">
         Use the HTML image attributes to set the size of the image to 250 pixels wide and 400 pixels tall.</br>
         &ltimg src="scream.png" width="250" height="400"&gt</br>
         Example:
@@ -473,7 +480,7 @@
         </div>
       </div>
 
-      <div>
+      <div class = "actividad">
         Use CSS to set the size of the image to 250 pixels wide and 400 pixels tall.</br>
         &ltimg src="scream.png" style="width:250px;height:400px;"&gt</br>
         Example:
@@ -482,7 +489,7 @@
         </div>
       </div>
 
-      <div>
+      <div class = "actividad">
         Use the correct HTML to make the image become a link to "default.html".</br><
         &lta href="default.html"&gt &ltimg src="1.jpg"&gt &lt/a&gt</br>
         Example:
@@ -491,14 +498,14 @@
         </div>
       </div>
 
-      <div>
+      <div class = "actividad">
         Make the image below float to the right of the paragraph.</br>
         &ltp&gt&ltimg src="1.jpg" style="float:right;"&gtThis is a paragraph.This paragraph contains an image&lt/p&gt</br>
         Example:
          <p><img src="1.jpg" style="float:right;">This is a paragraph.This paragraph contains an image</p></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Add the correct HTML attribute to display the "1.jpg" image.</br>
         &ltimg src = "1.jpg"&gt</br>
         Example:
@@ -507,7 +514,7 @@
         </div>
       </div>
 
-      <div>
+      <div class = "actividad">
         Specify an alternate text for the image.</br>
         The alternate text should say "Smiley".</br>
         Alternate text is useful when the image cannot be displayed, like when the page is read by a screen reader.</br>
@@ -523,7 +530,7 @@
     <div id = "Tables" style = "display: none">
       <p onclick="cerrar('Tables')" class = "cierre">cerrar</p>
 
-      <div>
+      <div class = "actividad">
         Add a table row with two table headers.</br>
         The two table headers should have the value "Name" and "Age".</br>
         <pre>
@@ -551,7 +558,7 @@
         </table></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Add a table caption that says "Names".</br>
         <pre>
         &lttable&gt
@@ -580,7 +587,7 @@
         </table></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Use CSS styles to make the table 300 pixels wide.</br>
         <pre>
         &lttable style="width:300px"&gt
@@ -608,7 +615,7 @@
         </table></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Add a table row at the end of the table, with two table cells. </br>
         The two table cells should have the value "Eve Jackson" and "94".</br>
         <pre>
@@ -647,7 +654,7 @@
         </table></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Use the correct HTML attribute to make the first TH element span two columns.</br>
         <pre>
         &lttable&gt
@@ -687,7 +694,7 @@
       </div>
 
 
-      <div>
+      <div class = "actividad">
         Use the correct HTML attribute to make the second TH element span two rows.</br>
         <pre>
         &lttable&gt
@@ -723,7 +730,7 @@
     <div id = "Lists" style = "display: none">
       <p onclick="cerrar('Lists')" class = "cierre">cerrar</p>
 
-      <div>
+      <div class = "actividad">
         Add a list item with the text "Coffee" inside the &ltul&gt.</br>
         <pre>
           &ltul&gt
@@ -736,7 +743,7 @@
           <ul><li>Coffee</li></ul></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Finish the HTML code to make an ordered list.</br>
         <pre>
         &ltol&gt
@@ -753,7 +760,7 @@
         <ol></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Use CSS to display squares instead of bullets.</br>
         <pre>
         &ltul style="list-style-type:square;"&gt
@@ -770,7 +777,7 @@
         <ul></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Use the correct HTML attribute to display letters (uppercase ABC) instead of numbers.</br>
         <pre>
         &ltol type="A"&gt
@@ -787,7 +794,7 @@
         <ol></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Use the correct HTML attribute to display uppercase roman numbers.</br>
         <pre>
         &ltol type="I"&gt
@@ -804,7 +811,7 @@
       <ol></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Use the correct HTML elements to make a description of each term in the description list.</br>
         <pre>
         &ltdl&gt
@@ -828,7 +835,7 @@
     <div id = "Classes" style = "display: none">
       <p onclick="cerrar('Classes')" class = "cierre">cerrar</p>
 
-      <div>
+      <div class = "actividad">
         Add a color property with the value "blue" inside the "special" class.</br>
         <pre>
           &ltstyle&gt .special{q
@@ -847,7 +854,7 @@
         <p class = "specialq">un parrafo de color azul</p></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Add the correct class to make the H5 element red.</br>
         <pre>
         &ltstyle&gt .mystyle {
@@ -862,7 +869,7 @@
         <h5 class="mystyle">Un H5 con estilo por clase, color rojo</h5>
       </div></br></br>
 
-      <div>
+      <div class = "actividad">
         Add two classes to the H5 element, to make the background pink and the color red.</br>
         <pre>
         &ltstyle&gt .intro {
@@ -887,7 +894,7 @@
     <div id = "Id" style = "display: none">
       <p onclick="cerrar('Id')" class = "cierre">cerrar</p>
 
-      <div>
+      <div class = "actividad">
         Add the correct HTML attribute to make the H1 element red.</br>
         <pre>
         &ltstyle&gt #myheader {
@@ -902,7 +909,7 @@
         <h5 id="myheader">Un h5 con estilo por id, color rojo</h5></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Create an id selector named "special".</br>
         Add a color property with the value "blue" inside the "special" declaration block.</br>
         <pre>
@@ -928,7 +935,7 @@
     <div id = "Iframes" style = "display: none">
       <p onclick="cerrar('Iframes')" class = "cierre">cerrar</p>
 
-      <div>
+      <div class = "actividad">
         Create an iframe with a URL address that goes to https://www.w3schools.com.</br>
         &ltiframe src="https://www.w3schools.com"&gt&lt/iframe&gt</br>
         Example:
@@ -937,7 +944,7 @@
         </div>
       </div>
 
-      <div>
+      <div class = "actividad">
         Use an iframe attribute to make the iframe 500 pixels wide.</br>
         &ltiframe src="https://www.w3schools.com" width="500"&gt&lt/iframe&gt</br>
         Example:
@@ -946,7 +953,7 @@
         </div>
       </div>
 
-      <div>
+      <div class = "actividad">
         Use CSS to display an iframe with no borders.</br>
         &ltiframe src="https://www.w3schools.com" style="border:none"&gt&lt/iframe&gt</br>
         Example:
@@ -955,7 +962,7 @@
         </div>
       </div>
 
-      <div>
+      <div class = "actividad">
         Create an iframe with a URL address that goes to "default.html".</br>
         &ltiframe src="default.html"&gt&lt/iframe&gt</br>
         Example:
@@ -969,7 +976,7 @@
     <div id = "Script" style = "display: none">
       <p onclick="cerrar('Script')" class = "cierre">cerrar</p>
 
-      <div>
+      <div class = "actividad">
           Use JavaScript to change the HTML content of the &ltp&gt element to "Hello World!".</br>
           <pre>
           &ltp id="demo"&gtHi.&lt/p&gt
@@ -984,7 +991,7 @@
           </script></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Use JavaScript to change the text size of the &ltp&gt element to 40 pixels.</br>
         <pre>
         &ltp id="demo"&gtHi.&lt/p&gt
@@ -999,7 +1006,7 @@
         </script></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Use JavaScript to set the color of the &ltp&gt element to "blue".</br>
         <pre>
         &ltp id="demo2"&gtHi.&lt/p&gt
@@ -1014,7 +1021,7 @@
         </script></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Use JavaScript to change the image source from "scream.png" to "smiley.gif".</br>
         <pre>
         &ltimg id="demo3" src="scream.png"&gt
@@ -1032,11 +1039,11 @@
       </div>
     </div>
 
-    <h1 onclick="mostrar('Computercode')" class = "Titulo">Computercode</h1>
-    <div id = "Computercode" style = "display: none">
-      <p onclick="cerrar('ScrComputercodeipt')" class = "cierre">cerrar</p>
+  <h1 onclick="mostrar('Computercode')" class = "Titulo">Computercode</h1>
+  <div id = "Computercode" style = "display: none">
+    <p onclick="cerrar('Computercode')" class = "cierre">cerrar</p>
 
-      <div>
+      <div class = "actividad">
         Define the text "var person;" as programming code.</br>
         <pre>
           &ltp&gtCode example: &ltcode&gtvar person;&lt/code&gt&lt/p&gt
@@ -1045,7 +1052,7 @@
         <p>Code example: <code>var person;</code></p></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Define the text inside the &ltcode&gt element as preformatted text (to preserve spaces and line breaks).</br>
           <pre>
           &ltp&gtCode example:&lt/p&gt
@@ -1066,7 +1073,7 @@
           </pre></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Define the character "x" in the equation as a variable.</br>
         <pre>
         &ltp&gtA simple math equation:
@@ -1082,7 +1089,7 @@
     <p onclick="cerrar('Forms')" class = "cierre">cerrar</p>
 
 
-      <div>
+      <div class = "actividad">
         In the form below, add an input field with the type "button" and the value "OK".</br>
         <pre>
         &ltform&gt
@@ -1095,7 +1102,7 @@
         </form></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         In the form below, add two radio buttons, both with the name "gender".</br>
         <pre>
         &ltform&gt
@@ -1109,13 +1116,14 @@
         </form></br></br>
       </div>
     </div>
+
 </div>
 
     <h1 onclick="mostrar('FormAttributes')" class = "Titulo">Form Attributes</h1>
     <div id = "FormAttributes" style = "display: none">
       <p onclick="cerrar('FormAttributes')" class = "cierre">cerrar</p>
 
-      <div>
+      <div class = "actividad">
         Add a submit button, and specify that the form should go to "/action_page.php".</br>
         <pre>
         &ltform action="/action_page.php"&gt
@@ -1128,7 +1136,7 @@
         </form></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Specify that the form is submitted using the "POST" method.</br>
         <pre>
         &ltform action="/action_page.php" method="post"&gt
@@ -1146,8 +1154,7 @@
     <h1 onclick="mostrar('FormElements')" class = "Titulo">Form Elements</h1>
     <div id = "FormElements" style = "display: none">
       <p onclick="cerrar('FormElements')" class = "cierre">cerrar</p>
-     <h1>Form Elements</h1>
-      <div>
+      <div class = "actividad">
         In the form below, add an empty drop down list with the name "cars".</br>
         <pre>
         &ltform action="/action_page.php"&gt
@@ -1161,7 +1168,7 @@
         </form></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         In the form below, add two option elements to the drop down list.</br>
         The first option must have the value "Volvo"</br>
         The second option must have the value "Ford".</br>
@@ -1181,7 +1188,7 @@
         </form></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         In the form below, add a text area with the name "note".</br>
         <pre>
         &ltform action="/action_page.php"&gt
@@ -1199,7 +1206,7 @@
     <div id = "InputTypes" style = "display: none">
       <p onclick="cerrar('InputTypes')" class = "cierre">cerrar</p>
 
-      <div>
+      <div class = "actividad">
         In the form below, add an input field for text, with the name "username" .</br>
         <pre>
         &ltform action="/action_page.php"&gt
@@ -1212,7 +1219,7 @@
         </form></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         In the form below, add a submit button with the value "Submit Form".</br>
         <pre>
         &ltform action="/action_page.php"&gt
@@ -1227,7 +1234,7 @@
         </form></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Add two radio buttons with the name "color".</br>
         <pre>
         &ltform action="/action_page.php"&gt
@@ -1247,7 +1254,7 @@
         </form></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         In the form below, add a &ltbutton&gt element with the text "Click Me".</br>
         <pre>
         &ltform action="/action_page.php"&gt
@@ -1260,7 +1267,7 @@
         </form></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         1. In the form below, add a input field that can only contain numbers</br>
         2. Use the correct input attributes to only allow numbers between 1 and 5.</br>
         <pre>
@@ -1279,7 +1286,7 @@
     <h1 onclick="mostrar('InputAttributes')" class = "Titulo">Input Attributes</h1>
     <div id = "InputAttributes" style = "display: none">
       <p onclick="cerrar('InputAttributes')" class = "cierre">cerrar</p>
-     <div>
+     <div class = "actividad">
         In the input field below, add placeholder that says "Your name here".</br>
         <ptre>
         &ltform action="/action_page.php"&gt
@@ -1292,7 +1299,7 @@
         </form></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Disable the input field below.</br>
         <pre>
         &ltform action="/action_page.php"&gt
@@ -1305,7 +1312,7 @@
         </form></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Set the max numbers of characters allowed in the input field to 40.</br>
         <pre>
         &ltform action="/action_page.php"&gt
@@ -1317,7 +1324,7 @@
         </form></br></br>
       </div>
 
-      <div>
+      <div class = "actividad">
         Set the input field to be read only (meaning that the value cannot be changed).</br>
         <pre>
         &ltorm action="/action_page.php"&gt
