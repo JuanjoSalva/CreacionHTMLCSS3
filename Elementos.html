@@ -11,9 +11,9 @@
         position: sticky;
         top: 0;
         background-color:green;
-        color:white;
         font-weight:bold;
-        text-decoration:none;
+        width: 80px;
+        height: 30px;
     }
     .cierre{
       color:red;
@@ -37,7 +37,7 @@
   </head>
   <body>
     <div class ="sticky">
-      <a href="index.html">Volver</a>
+      <a href="index.html" style="color:white; text-decoration:none; font-size:24px">Volver</a>
     </div>
 
     <h1 onclick="mostrar('Attributes')" class = "Titulo">Attributes</h1>
@@ -1355,14 +1355,20 @@
         <input type="text" readonly>
         </form></br></br>
       </div>
+
+      <p onclick="cerrar('InputAttributes')" class = "cierre">cerrar</p>
     </div>
-  <p onclick="cerrar('Background')" class = "cierre">cerrar</p>
+
   </body>
 
   <script languague="javascript">
     function mostrar(id) {
-        div = document.getElementById(id);
-        div.style.display = '';
+      div = document.getElementById(id);
+            if (div.style.display == 'none'){
+                div.style.display = 'block';
+            }else{
+                div.style.display = 'none';
+            }
     }
 
     function cerrar(id) {

@@ -7,14 +7,14 @@
     <h1>Attributes</h1> Revisión 2020</title>
 
     <style>
-        .sticky{
+         .sticky{
             position: -webkit-sticky;
             position: sticky;
             top: 0;
             background-color:green;
-            color:white;
             font-weight:bold;
-            text-decoration:none;
+            width: 80px;
+            height: 30px;
         }
         .cierre{
             color:red;
@@ -38,9 +38,8 @@
 <body>
 
     <div class ="sticky">
-        <a href="index.html">Volver</a>
-    </div>
-
+        <a href="index.html" style="color:white; text-decoration:none; font-size:24px">Volver</a>
+      </div>
     <h1 onclick="mostrar('Selector')" class = "Titulo">CSS Selector</h1>
     <div id = "Selector" style = "display: none">
         <p onclick="cerrar('Selector')" class = "cierre">cerrar</p>
@@ -1746,14 +1745,14 @@
         </div>
 
         <div class = "actividad"   style = "height: 800px;">
-            Add a scrollbar to the &ltdiv&gt element.</br>
+            Specify that the overflowing text in the &ltdiv&gt element should not be visible, not even with scrolling.</br>
             <pre>
             &ltstyle>
                 div{
                     background-color: lightblue;
                     width: 200px;
                     height: 200px;
-                    overflow: none;
+                    overflow: hidden;
                 }
             &lt/style&gt
             &lth5&gtThis is a Heading&lt/h5&gt
@@ -1767,7 +1766,7 @@
                     background-color: lightblue;
                     width: 200px;
                     height: 200px;
-                    overflow: none;
+                    overflow: hidden;
                         }
             </style>
             <h5>This is a Heading</h5>
@@ -2049,18 +2048,18 @@
             Set the background color for visited and unvisited links to "lightblue", and the background color for the hover and active link states to "yellow".</br>
             <pre>
                 &ltstyle&gt
-                a {
-                background-color: lightblue;
-                }
-                a {
-                background-color: lightblue;
-                }
-                a {
-                background-color: yellow;
-                }
-                a {
-                background-color: yellow;
-                }
+                a:link {
+                    background-color: lightblue;
+                  }
+                  a:visited {
+                    background-color: lightblue;
+                  }
+                  a:hover {
+                    background-color: yellow;
+                  }
+                  a:active {
+                    background-color: yellow;
+                  }
                 &lt/style&gt
                 &lth1&gtThis is a Heading&lt/h1&gt
                 &ltp&gtThis is a paragraph.&lt/p&gt
@@ -2193,7 +2192,7 @@
             </pre>
             Example:
             <style>
-                .p.pelem2::first-letter {
+                p.pelem2::first-letter {
                     color: red;
                     font-size: xx-large;
                     }
@@ -3351,11 +3350,13 @@
             </pre>
             Example:
             <style>
-                .WebFonts1 {
-                    @font-face {
-                            font-family: sansation;
-                            src: url(sansation_light.woff);
-                        }
+                @font-face {
+                    font-family: sansation;
+                    src: url(sansation_light.woff);
+                }
+
+                div.WebFonts1 {
+                    font-family: sansation;
                 }
             </style>
 
@@ -3394,12 +3395,19 @@
             </pre>
             Example:
             <style>
-                .WebFonts2 {
-                        @font-face {
-                            font-family: sansation;
-                            src: url(sansation_bold.woff);
-                            font-weight: bold;
-                        }
+                @font-face {
+                        font-family: sansation;
+                        src: url(sansation_light.woff);
+                }
+
+                @font-face {
+                    font-family: sansation;
+                    src: url(sansation_bold.woff);
+                    font-weight: bold;
+                }
+                div.WebFonts2 {
+                    font-family: sansation;
+                    font-weight: bold;
                 }
             </style>
             </head>
@@ -4125,7 +4133,11 @@
     <script languague="javascript">
         function mostrar(id) {
             div = document.getElementById(id);
-            div.style.display = '';
+            if (div.style.display == 'none'){
+                div.style.display = 'block';
+            }else{
+                div.style.display = 'none';
+            }
         }
 
         function cerrar(id) {
