@@ -3322,18 +3322,14 @@
             </pre>
             Example:
             <style>
-            .WebFonts1 {
-                @font-face {
-                        font-family: sansation;
-                        src: url(sansation_light.woff);
-                    }
-
-                    body {
-                        font-family: sansation;
-                    }
-            }
+                .WebFonts1 {
+                    @font-face {
+                            font-family: sansation;
+                            src: url(sansation_light.woff);
+                        }
+                }
             </style>
-            </head>
+
             <div class = "WebFonts1" >
                 <h5>This is a Heading</h5>
                 <p>This is a paragraph.</p>
@@ -3342,7 +3338,7 @@
         </div>
 
         <div class = "actividad">
-            Add another @font-face rule for bold characters of the "sansation" font. Use the URL "sansation_bold.woff".</br>
+            Add another font-face rule for bold characters of the "sansation" font. Use the URL "sansation_bold.woff".</br>
             <pre>
                 &ltstyle&gt
                     @font-face {
@@ -3369,22 +3365,13 @@
             </pre>
             Example:
             <style>
-            .WebFonts2 {
-                @font-face {
-                        font-family: sansation;
-                        src: url(sansation_light.woff);
-                    }
-
-                    @font-face {
-                        font-family: sansation;
-                        src: url(sansation_bold.woff);
-                        font-weight: bold;
-                    }
-
-                    body {
-                        font-family: sansation;
-                    }
-            }
+                .WebFonts2 {
+                        @font-face {
+                            font-family: sansation;
+                            src: url(sansation_bold.woff);
+                            font-weight: bold;
+                        }
+                }
             </style>
             </head>
             <div class = "WebFonts2" >
@@ -3395,13 +3382,11 @@
         </div>
     </div>
 
-
-
     <h1 onclick="mostrar('2DTransform')">CSS  2D Transform </h1>
     <div id = "2DTransform" style = "display: none">
         <p onclick="cerrar('2DTransform')" class = "cierre">cerrar</p>
 
-        <div class = "actividad">
+        <div class = "actividad" style = "height: 700px;" >
             With the transform property, move the &ltiv&gt element 100px to the right, and 200px down.</br>
             <pre>
                 &ltstyle&gt
