@@ -6,42 +6,16 @@
     <title>CSSIniciar
     <h1>Attributes</h1> Revisión 2020</title>
 
-    <style>
-         .sticky{
-            position: -webkit-sticky;
-            position: sticky;
-            top: 0;
-            background-color:green;
-            font-weight:bold;
-            width: 80px;
-            height: 30px;
-        }
-        .cierre{
-            color:red;
-            font-weight: bold;
-        }
-        .cierre:hover{
-            cursor:pointer; cursor: hand
-        }
-        body{
-            background-color: rgb(198, 204, 219);
-        }
-        .actividad{
-            border:2px solid black;
-        }
-        .Titulo:hover{
-            background-color:saddlebrown;
-            cursor:pointer; cursor: hand
-        }
-    </style>
+        <link rel="stylesheet" type="text/css" href="main.css">
+
 </head>
 <body>
-
     <div class ="sticky">
         <a href="index.html" style="color:white; text-decoration:none; font-size:24px">Volver</a>
-      </div>
+    </div>
+
     <h1 onclick="mostrar('Selector')" class = "Titulo">CSS Selector</h1>
-    <div id = "Selector" style = "display: none">
+    <div id = "Selector" style="display : none">
         <p onclick="cerrar('Selector')" class = "cierre">cerrar</p>
 
         <div class = "actividad">
@@ -4145,23 +4119,6 @@
     <p onclick="cerrar('Animation')" class = "cierre">cerrar</p>
     </div>
 
-
-
-    <script languague="javascript">
-        function mostrar(id) {
-            div = document.getElementById(id);
-            if (div.style.display == 'none'){
-                div.style.display = 'block';
-            }else{
-                div.style.display = 'none';
-            }
-        }
-
-        function cerrar(id) {
-            div = document.getElementById(id);
-            div.style.display = 'none';
-        }
-
-    </script>
+    <script type="text/javascript" src="funciones.js"></script>
 </body>
 </html>

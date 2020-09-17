@@ -4,35 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Revisión 2020.</title>
-    <style>table, th, td {
-      border: 1px solid black;}
-      .sticky{
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-        background-color:green;
-        font-weight:bold;
-        width: 80px;
-        height: 30px;
-    }
-    .cierre{
-      color:red;
-      font-weight: bold;
-    }
-    .cierre:hover{
-      cursor:pointer; cursor: hand
-    }
-    .Titulo:hover{
-            background-color:saddlebrown;
-            cursor:hand;
-            cursor:pointer; cursor: hand
-        }
-    .actividad{
-            border:2px solid black;
-        }
-    body{
-            background-color: rgb(198, 204, 219);
-        }
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <style>
+      table, th, td {
+          border: 1px solid black;
+      }
+
     </style>
   </head>
   <body>
@@ -1361,20 +1340,6 @@
 
   </body>
 
-  <script languague="javascript">
-    function mostrar(id) {
-      div = document.getElementById(id);
-            if (div.style.display == 'none'){
-                div.style.display = 'block';
-            }else{
-                div.style.display = 'none';
-            }
-    }
+  <script type="text/javascript" src="funciones.js"></script>
 
-    function cerrar(id) {
-        div = document.getElementById(id);
-        div.style.display = 'none';
-    }
-
-</script>
 </html>
