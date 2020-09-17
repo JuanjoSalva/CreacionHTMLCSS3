@@ -14,19 +14,22 @@
           box-shadow: 10px 10px 5px grey;
           width: 300px;
           padding: 100px;
-          margin-top: 100px;
-          margin-left:450px;
-          font-size:24px
+          font-size:24px;
+          margin-left:500px;
+          animation-name: example2;
+          animation-duration: 2s;
+          position: relative;
       }
+
+
+      @keyframes example2 {
+          0%   {background-color: red; margin-left:0px;}
+          100%  {background-color: #73AD21; margin-left:500px;}
+      }
+
 
       body{
         background-image: radial-gradient(rgb(69, 71, 70),rgb(198, 204, 219));
-
-
-        /*background-image: url(3.png);
-        background-position: right bottom, left top;
-        background-repeat: no-repeat, repeat;*/
-
       }
     </style>
   </head>

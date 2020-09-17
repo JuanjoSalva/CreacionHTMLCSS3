@@ -3861,6 +3861,8 @@
                         background-color: red;
                         animation-name: example1;
                         animation-duration: 2s;
+                        animation-delay:3s;
+                        animation-iteration-count:infinite;
                     }
                     @keyframes example1 {
                         from {background-color: red;}
@@ -3879,6 +3881,8 @@
                 background-color: red;
                 animation-name: example1;
                 animation-duration: 2s;
+                animation-delay:3s;
+                animation-iteration-count:infinite;
             }
             @keyframes example1 {
                 from {background-color: red;}
@@ -3906,6 +3910,8 @@
                         background-color: red;
                         animation-name: example2;
                         animation-duration: 4s;
+                        animation-delay:3s;
+                        animation-iteration-count:infinite;
                     }
                     @keyframes example2 {
                         0%   {background-color: red; left:0px; top:0px;}
@@ -3928,6 +3934,8 @@
                 background-color: red;
                 animation-name: example2;
                 animation-duration: 4s;
+                animation-delay:3s;
+                animation-iteration-count:infinite;
             }
             @keyframes example2 {
                 0%   {background-color: red; left:0px; top:0px;}
@@ -3942,7 +3950,7 @@
         </div>
 
         <div class = "actividad">
-            Specify that the animation of the <div> element should have a "1" second delay before starting.</br>
+            Specify that the animation of the &ltdiv&gt element should have a "1" second delay before starting.</br>
             <pre>
                 &ltstyle&gt
                     div{
@@ -3953,6 +3961,8 @@
                         animation-name: example3;
                         animation-duration: 2s;
                         animation-delay: 1s;
+                        animation-delay:3s;
+                        animation-iteration-count:infinite;
                     }
                     @keyframes example3 {
                         0%   {background-color: red; left:0px;}
@@ -3974,6 +3984,7 @@
                 animation-name: example3;
                 animation-duration: 2s;
                 animation-delay: 1s;
+                animation-iteration-count:infinite;
             }
             @keyframes example3 {
                 0%   {background-color: red; left:0px;}
@@ -3987,7 +3998,7 @@
 
 
         <div class = "actividad">
-            Add a 2 second animation for the &ltdiv&gt element, which changes the color from red to blue. Call the animation "example".</br>
+            Specify that the animation of the &ltiv&gt element should continue to loop for ever..</br>
             <pre>
                 &ltstyle&gt
                     div{
@@ -3997,6 +4008,8 @@
                         background-color: red;
                         animation-name: example4;
                         animation-duration: 2s;
+                        animation-delay:3s;
+                        animation-iteration-count:infinite;
                     }
                     @keyframes example4 {
                         0%   {background-color: red; left:0px;}
@@ -4017,6 +4030,8 @@
                 background-color: red;
                 animation-name: example4;
                 animation-duration: 2s;
+                animation-delay:3s;
+                animation-iteration-count:infinite;
             }
             @keyframes example4 {
                 0%   {background-color: red; left:0px;}
@@ -4030,7 +4045,7 @@
 
 
         <div class = "actividad">
-            Add a 2 second animation for the &ltdiv&gt element, which changes the color from red to blue. Call the animation "example".</br>
+            Specify that the animation of the &ltdiv&gt element should alternate between running forwards and backwards.</br>
             <pre>
                 &ltstyle&gt
                 div {
@@ -4082,7 +4097,7 @@
 
 
         <div class = "actividad">
-            Add a 2 second animation for the &ltdiv&gt element, which changes the color from red to blue. Call the animation "example".</br>
+            Specify that the animation of the &ltdiv&gt element should have a "ease-in-out" speed curve..</br>
             <pre>
                 &ltstyle&gt
                 div {
@@ -4093,6 +4108,7 @@
                     animation-name: example6;
                     animation-duration: 4s;
                     animation-timing-function: ease-in-out;
+                    animation-iteration-count: infinite;
                 }
                 
                 @keyframes example6 {
@@ -4115,6 +4131,7 @@
                 animation-name: example6;
                 animation-duration: 4s;
                 animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
             }
             @keyframes example6 {
                 0%   {background-color: red; left:0px;}
