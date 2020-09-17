@@ -19,9 +19,7 @@ body{
 }
 .actividad{
     border:2px solid black;
-    actividad::before {
-        content: "Exercise";
-      }
+    
 }
 .Titulo:hover{
     background-color:saddlebrown;
